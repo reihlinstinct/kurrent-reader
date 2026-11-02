@@ -19,7 +19,8 @@ def _check_python_version() -> None:
             "kurrent-reader requires Python "
             f"{MIN_PYTHON[0]}.{MIN_PYTHON[1]}+ "
             "(you are running "
-            f"{_sys.version_info.major}.{_sys.version_info.minor}.{_sys.version_info.micro}). "
+            + ".".join(str(v) for v in _sys.version_info[:3])
+            + "). "
             "Python 3.10 is end-of-life; please use a newer interpreter."
         )
 
