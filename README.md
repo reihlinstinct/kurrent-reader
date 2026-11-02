@@ -121,6 +121,12 @@ collection (source 1081, Eschau Jewish registers) and a family-book scan of
 the Kochendorf register. They are not committed to this repository; place
 them under `data/` (gitignored).
 
+The archival scans are published by JUF/Stadtarchiv-Digital under a CC BY 3.0
+license unless otherwise noted (https://stadtarchiv-digital.de/impressum/).
+Derivative material in this project (band overlays, transcripts) credits
+"JUF/Stadtarchiv-Digital, quelleId=1081 (Eschau Standesregister)" and marks
+its modifications.
+
 ## Intended safeguards
 
 Preserve original scans. Keep cleaned derivatives and proposed readings
