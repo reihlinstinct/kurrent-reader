@@ -1421,6 +1421,11 @@ class SSTrainer(Seq2SeqTrainer):
     history (loss still on gold labels). Targets exposure-bias hallucination."""
 
     def compute_loss(self, model, inputs, return_outputs=False, num_items_in_batch=None):
+        # Kaggle sometimes hands us GPU T4 x2, which makes HF Trainer wrap the
+        # model in nn.DataParallel; unwrap for config access and forwards so the
+        # SS branch does not crash on model.config (v27 run-1 died this way).
+        if hasattr(model, "module"):
+            model = model.module
         if model.training and _ss_random.random() < SS_P:
             labels = inputs["labels"]
             with torch.no_grad():
