@@ -1,5 +1,9 @@
 # v27 - scheduled sampling (SS_P=0.15) + beam-4 eval of checkpoint-best (run 2)
 
+> **Correction 2026-11-09 (v25beam finding):** this run pinned decoding explicitly, so "greedy" here is TRUE greedy (num_beams=1) and "beam-4" is explicit beam-4 - both labels accurate. But the reference points quoted below (v25 0.8685, v26a, v26b, base) were produced with the model-DEFAULT decode, which is itself beam-4 + early_stopping + lp 2.0. Correct matched-decoding comparisons: v27 beam-4 0.8729 vs v25 (default beam-4) 0.8685 - v25 recipe ahead by ~0.004 under identical decoding (not the ~0.024 the cross-decoding reading suggests); v27 true greedy 0.8921 matches v25beam true greedy 0.8934. "Beam-4 on v25's own checkpoints cannot be tested" is superseded by runs/v25beam (0.8718 at greedy-selected checkpoints).
+
+
+
 Kernel: https://www.kaggle.com/code/reihlinstinct/kurrent-v27-schedsamp-run-2 (script scripts/kaggle_kernel_v27.py, commit e610c9b - fixes the DataParallel unwrap crash that killed run 1 on all 3 seeds when Kaggle assigned T4 x2).
 
 Held-out v5 names set (105 cells, 50 held-out IdNrs). Per-seed best-on-dev checkpoint selection by greedy names CER; beam-4 decode of the same checkpoint measured alongside. EVAL500 untouched.

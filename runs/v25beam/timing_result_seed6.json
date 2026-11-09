@@ -1,0 +1,2047 @@
+{
+ "seed": 6,
+ "config": {
+  "lr": 1e-06,
+  "warmup": 100,
+  "epochs": 2,
+  "eval_every": 125,
+  "batch": 8,
+  "base_model": "/kaggle/input/__nonexistent_no_checkpoint__",
+  "resume": true,
+  "left_out": "MM_1_006"
+ },
+ "before": {
+  "h12": {
+   "h00": {
+    "hyp": "Ges .",
+    "span_hit": false
+   },
+   "h01": {
+    "hyp": "ist",
+    "cer": 0.929,
+    "word_acc": 0.0
+   },
+   "h02": {
+    "hyp": "27 .",
+    "span_hit": false
+   },
+   "h03": {
+    "hyp": "eckten"
+   },
+   "h04": {
+    "hyp": "Papay"
+   },
+   "h05": {
+    "hyp": "23 ."
+   },
+   "h06": {
+    "hyp": "B. U.M ."
+   },
+   "h07": {
+    "hyp": "2 . ) Den könn . Nov ist dem häufigen Schön unden",
+    "cer": 0.476,
+    "word_acc": 0.571
+   },
+   "h08": {
+    "hyp": "Exrechniger 2 Kinder nämlich ein Sohn und",
+    "span_hit": true
+   },
+   "h09": {
+    "hyp": "Die Mädchen geboren welche die Namen neuen",
+    "span_hit": false
+   },
+   "h10": {
+    "hyp": "das Wädchen Mergend und der Sohn Joseph erhielt .",
+    "span_hit": {
+     "das Mädchen": false,
+     "und der Sohn Joseph": true
+    }
+   },
+   "h11": {
+    "hyp": "[ ! ] übernomme war befanna Glašmann ."
+   }
+  },
+  "mm006_500": {
+   "n": 500,
+   "cer": 0.0634,
+   "word_acc": 0.7351
+  },
+  "names": {
+   "n": 105,
+   "cer": 0.9104,
+   "word_acc": 0.0,
+   "detail": {
+    "occupation:38666": {
+     "hyp": "xx",
+     "cer": 1.0,
+     "word_acc": 0.0
+    },
+    "occupation:38678": {
+     "hyp": "Weltan",
+     "cer": 0.857,
+     "word_acc": 0.0
+    },
+    "occupation:38693": {
+     "hyp": "die",
+     "cer": 0.833,
+     "word_acc": 0.0
+    },
+    "occupation:38696": {
+     "hyp": "und",
+     "cer": 1.0,
+     "word_acc": 0.0
+    },
+    "name:33739": {
+     "hyp": "ist .",
+     "cer": 0.875,
+     "word_acc": 0.0
+    },
+    "date:33739": {
+     "hyp": "Zu B. H. Ernst",
+     "span_hit": {
+      "28": false,
+      "1845": false
+     }
+    },
+    "occupation:33739": {
+     "hyp": "|",
+     "cer": 1.0,
+     "word_acc": 0.0
+    },
+    "name:38666": {
+     "hyp": "4/2",
+     "cer": 1.0,
+     "word_acc": 0.0
+    },
+    "date:38666": {
+     "hyp": "xx",
+     "span_hit": {
+      "20": false,
+      "1855": false
+     }
+    },
+    "name:38678": {
+     "hyp": "1 . Partei|",
+     "cer": 0.941,
+     "word_acc": 0.0
+    },
+    "date:38678": {
+     "hyp": "thiebs bei knietiefen",
+     "span_hit": {
+      "10": false,
+      "1864": false
+     }
+    },
+    "name:38693": {
+     "hyp": "„ 2 . März",
+     "cer": 0.875,
+     "word_acc": 0.0
+    },
+    "date:38693": {
+     "hyp": "neben Sie",
+     "span_hit": {
+      "30": false,
+      "1867": false
+     }
+    },
+    "name:38696": {
+     "hyp": ".",
+     "cer": 1.0,
+     "word_acc": 0.0
+    },
+    "date:38696": {
+     "hyp": "Ges . 9 -",
+     "span_hit": {
+      "14": false,
+      "1869": false
+     }
+    },
+    "name:3763": {
+     "hyp": "Wissen",
+     "cer": 0.875,
+     "word_acc": 0.0
+    },
+    "date:3763": {
+     "hyp": "Ed . Fenzl .",
+     "span_hit": {
+      "18": false,
+      "1831": false
+     }
+    },
+    "name:3766": {
+     "hyp": "Familie",
+     "cer": 0.8,
+     "word_acc": 0.0
+    },
+    "date:3766": {
+     "hyp": "Stampfer",
+     "span_hit": {
+      "18": false,
+      "1864": false
+     }
+    },
+    "name:6403": {
+     "hyp": "Ges .",
+     "cer": 0.875,
+     "word_acc": 0.0
+    },
+    "date:6403": {
+     "hyp": "Schöne",
+     "span_hit": {
+      "18": false,
+      "1833": false
+     }
+    },
+    "name:6412": {
+     "hyp": "Güstrow i M",
+     "cer": 0.929,
+     "word_acc": 0.0
+    },
+    "date:6412": {
+     "hyp": "Man . Wir grüßen",
+     "span_hit": {
+      "15": false,
+      "1872": false
+     }
+    },
+    "name:6446": {
+     "hyp": "Morgbecker ,",
+     "cer": 0.8,
+     "word_acc": 0.0
+    },
+    "date:6446": {
+     "hyp": "zusammen",
+     "span_hit": {
+      "14": false,
+      "1866": false
+     }
+    },
+    "name:6449": {
+     "hyp": "Höscherow",
+     "cer": 0.778,
+     "word_acc": 0.0
+    },
+    "date:6449": {
+     "hyp": "Hofburg",
+     "span_hit": {
+      "2": false,
+      "1870": false
+     }
+    },
+    "name:6500": {
+     "hyp": "Secreturen",
+     "cer": 0.824,
+     "word_acc": 0.0
+    },
+    "date:6500": {
+     "hyp": "„ „ statteten ist verwendet .",
+     "span_hit": {
+      "18": false,
+      "1872": false
+     }
+    },
+    "name:38035": {
+     "hyp": "1 . ) Studem F. Steechs.Münkle",
+     "cer": 1.562,
+     "word_acc": 0.0
+    },
+    "date:38035": {
+     "hyp": "18.6",
+     "span_hit": {
+      "19": false,
+      "1857": false
+     }
+    },
+    "name:38037": {
+     "hyp": "Erz .",
+     "cer": 0.933,
+     "word_acc": 0.0
+    },
+    "date:38037": {
+     "hyp": "xx",
+     "span_hit": {
+      "23": false,
+      "1831": false
+     }
+    },
+    "name:38098": {
+     "hyp": "Wildmann",
+     "cer": 0.867,
+     "word_acc": 0.0
+    },
+    "date:38098": {
+     "hyp": "( xxx",
+     "span_hit": {
+      "8": false,
+      "1837": false
+     }
+    },
+    "name:38099": {
+     "hyp": "u. hier",
+     "cer": 0.824,
+     "word_acc": 0.0
+    },
+    "date:38099": {
+     "hyp": "Ed . Fenzl",
+     "span_hit": {
+      "10": false,
+      "1836": false
+     }
+    },
+    "name:38106": {
+     "hyp": "Wünsche",
+     "cer": 0.917,
+     "word_acc": 0.0
+    },
+    "date:38106": {
+     "hyp": "M. H. 217",
+     "span_hit": {
+      "14": false,
+      "1841": false
+     }
+    },
+    "name:38113": {
+     "hyp": "Erx",
+     "cer": 0.941,
+     "word_acc": 0.0
+    },
+    "date:38113": {
+     "hyp": "damitätze",
+     "span_hit": {
+      "28": false,
+      "1843": false
+     }
+    },
+    "name:38315": {
+     "hyp": "Jahre zu",
+     "cer": 0.875,
+     "word_acc": 0.0
+    },
+    "date:38315": {
+     "hyp": "Collar",
+     "span_hit": {
+      "28": false,
+      "1823": false
+     }
+    },
+    "name:38622": {
+     "hyp": "2 .",
+     "cer": 0.941,
+     "word_acc": 0.0
+    },
+    "date:38622": {
+     "hyp": "8 . M.",
+     "span_hit": {
+      "4": false,
+      "1823": false
+     }
+    },
+    "name:38623": {
+     "hyp": "Edizin",
+     "cer": 0.941,
+     "word_acc": 0.0
+    },
+    "date:38623": {
+     "hyp": "Ed . Fenzl",
+     "span_hit": {
+      "9": false,
+      "1825": false
+     }
+    },
+    "name:38624": {
+     "hyp": "xx",
+     "cer": 1.0,
+     "word_acc": 0.0
+    },
+    "date:38624": {
+     "hyp": "8 .",
+     "span_hit": {
+      "11": false,
+      "1825": false
+     }
+    },
+    "name:38627": {
+     "hyp": "Ges .",
+     "cer": 0.875,
+     "word_acc": 0.0
+    },
+    "date:38627": {
+     "hyp": "M. M. Barlach",
+     "span_hit": {
+      "29": false,
+      "1829": false
+     }
+    },
+    "name:38628": {
+     "hyp": "xx",
+     "cer": 1.0,
+     "word_acc": 0.0
+    },
+    "date:38628": {
+     "hyp": "10 Uhr . Min .",
+     "span_hit": {
+      "21": false,
+      "1829": false
+     }
+    },
+    "name:38636": {
+     "hyp": "Ed . Fenzl",
+     "cer": 0.727,
+     "word_acc": 0.0
+    },
+    "date:38636": {
+     "hyp": "Wth .",
+     "span_hit": {
+      "22": false,
+      "1834": false
+     }
+    },
+    "name:38639": {
+     "hyp": "Kreuz",
+     "cer": 1.0,
+     "word_acc": 0.0
+    },
+    "date:38639": {
+     "hyp": "Alexin",
+     "span_hit": {
+      "9": false,
+      "1835": false
+     }
+    },
+    "name:38640": {
+     "hyp": "Ed . Fenzl 28/12",
+     "cer": 1.0,
+     "word_acc": 0.0
+    },
+    "date:38640": {
+     "hyp": "Marilli",
+     "span_hit": {
+      "26": false,
+      "1836": false
+     }
+    },
+    "name:38672": {
+     "hyp": "xx",
+     "cer": 1.0,
+     "word_acc": 0.0
+    },
+    "date:38672": {
+     "hyp": "teilich",
+     "span_hit": {
+      "11": false,
+      "1858": false
+     }
+    },
+    "name:38740": {
+     "hyp": "Herrnach |",
+     "cer": 0.833,
+     "word_acc": 0.0
+    },
+    "date:38740": {
+     "hyp": "Geschützfeuer",
+     "span_hit": {
+      "28te": false
+     }
+    },
+    "name:38744": {
+     "hyp": "Breite",
+     "cer": 0.833,
+     "word_acc": 0.0
+    },
+    "date:38744": {
+     "hyp": "die",
+     "span_hit": {
+      "12": false,
+      "1849": false
+     }
+    },
+    "name:38745": {
+     "hyp": "Gut [ ... ]",
+     "cer": 0.812,
+     "word_acc": 0.0
+    },
+    "date:38745": {
+     "hyp": "hin wäre mit",
+     "span_hit": {
+      "Juni": false
+     }
+    },
+    "name:38746": {
+     "hyp": "Mresbadhn . 2 .",
+     "cer": 0.864,
+     "word_acc": 0.0
+    },
+    "date:38746": {
+     "hyp": "Majn und",
+     "span_hit": {
+      "9": false,
+      "1857": false
+     }
+    },
+    "name:38751": {
+     "hyp": "Gute Möller",
+     "cer": 0.6,
+     "word_acc": 0.0
+    },
+    "date:38751": {
+     "hyp": "1891",
+     "span_hit": {
+      "18te": false
+     }
+    },
+    "name:38754": {
+     "hyp": "Besbacher , 24 . II",
+     "cer": 1.143,
+     "word_acc": 0.0
+    },
+    "date:38754": {
+     "hyp": "bald",
+     "span_hit": {
+      "21": false,
+      "1873": false
+     }
+    },
+    "name:38755": {
+     "hyp": "Arbeiten der",
+     "cer": 0.867,
+     "word_acc": 0.0
+    },
+    "date:38755": {
+     "hyp": "2 . „ Eigentartigkeit",
+     "span_hit": {
+      "25": false,
+      "1875": false
+     }
+    },
+    "name:38780": {
+     "hyp": "die",
+     "cer": 0.938,
+     "word_acc": 0.0
+    },
+    "date:38780": {
+     "hyp": "2 6",
+     "span_hit": {
+      "8": false,
+      "1851": false
+     }
+    },
+    "name:38782": {
+     "hyp": "Schluss",
+     "cer": 0.917,
+     "word_acc": 0.0
+    },
+    "date:38782": {
+     "hyp": "beim vielme . ( Ablaufe ) klei",
+     "span_hit": {
+      "7": false,
+      "1875": false
+     }
+    },
+    "name:38783": {
+     "hyp": "Am",
+     "cer": 1.0,
+     "word_acc": 0.0
+    },
+    "date:38783": {
+     "hyp": "Hier nach ...",
+     "span_hit": {
+      "21": false,
+      "1873": false
+     }
+    },
+    "name:38786": {
+     "hyp": "seine",
+     "cer": 1.0,
+     "word_acc": 0.0
+    },
+    "date:38786": {
+     "hyp": "auf einem",
+     "span_hit": {
+      "20": false,
+      "1856": false
+     }
+    },
+    "name:38787": {
+     "hyp": "Gemette .",
+     "cer": 0.625,
+     "word_acc": 0.0
+    },
+    "date:38787": {
+     "hyp": "auf einem",
+     "span_hit": {
+      "20": false,
+      "1856": false
+     }
+    },
+    "name:38789": {
+     "hyp": "freiheit",
+     "cer": 0.909,
+     "word_acc": 0.0
+    },
+    "date:38789": {
+     "hyp": "Stampfzig",
+     "span_hit": {
+      "15": false,
+      "1863": false
+     }
+    },
+    "name:38792": {
+     "hyp": "Stropfs , 36",
+     "cer": 0.917,
+     "word_acc": 0.0
+    },
+    "date:38792": {
+     "hyp": "den mit dem Grundezember",
+     "span_hit": {
+      "6": false,
+      "1874": false
+     }
+    },
+    "name:38793": {
+     "hyp": "Strauss . 2 ein",
+     "cer": 0.941,
+     "word_acc": 0.0
+    },
+    "date:38793": {
+     "hyp": "„ „ Schreiberungskomme ’ s",
+     "span_hit": {
+      "19": false,
+      "1875": false
+     }
+    },
+    "name:38796": {
+     "hyp": "Ed . Fenzl",
+     "cer": 0.727,
+     "word_acc": 0.0
+    },
+    "date:38796": {
+     "hyp": "Mann die",
+     "span_hit": {
+      "11": false,
+      "1846": false
+     }
+    },
+    "name:38800": {
+     "hyp": "21 . Mann",
+     "cer": 1.286,
+     "word_acc": 0.0
+    },
+    "date:38800": {
+     "hyp": "Welt .",
+     "span_hit": {
+      "8": false,
+      "1857": false
+     }
+    },
+    "name:38806": {
+     "hyp": "Menſo um",
+     "cer": 0.733,
+     "word_acc": 0.0
+    },
+    "date:38806": {
+     "hyp": "soll",
+     "span_hit": {
+      "30": false,
+      "1865": false
+     }
+    },
+    "name:38807": {
+     "hyp": "mt .",
+     "cer": 0.917,
+     "word_acc": 0.0
+    },
+    "date:38807": {
+     "hyp": ".",
+     "span_hit": {
+      "6": false,
+      "1867": false
+     }
+    },
+    "name:38809": {
+     "hyp": "Stunde",
+     "cer": 0.846,
+     "word_acc": 0.0
+    },
+    "date:38809": {
+     "hyp": "der „ schließen habe",
+     "span_hit": {
+      "5": false,
+      "1872": false
+     }
+    },
+    "name:38810": {
+     "hyp": "Grafen . 6/10",
+     "cer": 0.833,
+     "word_acc": 0.0
+    },
+    "date:38810": {
+     "hyp": "als . „ - Streiten über den Gebirge",
+     "span_hit": {
+      "26": false,
+      "1874": false
+     }
+    }
+   },
+   "cer_v4subset": 0.9275,
+   "span_hit_rate": 0.0
+  }
+ },
+ "after_final": {
+  "h12": {
+   "h00": {
+    "hyp": "9.5.35",
+    "span_hit": false
+   },
+   "h01": {
+    "hyp": "ist",
+    "cer": 0.929,
+    "word_acc": 0.0
+   },
+   "h02": {
+    "hyp": "27|",
+    "span_hit": false
+   },
+   "h03": {
+    "hyp": "eckosteile"
+   },
+   "h04": {
+    "hyp": "Papay"
+   },
+   "h05": {
+    "hyp": "u2 ."
+   },
+   "h06": {
+    "hyp": "B. U.M ."
+   },
+   "h07": {
+    "hyp": "2 ) Den können Nov ist dem häufigen Schön unden",
+    "cer": 0.381,
+    "word_acc": 0.571
+   },
+   "h08": {
+    "hyp": "Exrechniger 2 Kinder nämlich ein Sohn und",
+    "span_hit": true
+   },
+   "h09": {
+    "hyp": "Die Mädchen geboren welche die Namen neuung ,",
+    "span_hit": false
+   },
+   "h10": {
+    "hyp": "das Wädchen Mergend und der Sohn Joseph erhielt .",
+    "span_hit": {
+     "das Mädchen": false,
+     "und der Sohn Joseph": true
+    }
+   },
+   "h11": {
+    "hyp": "[ ! ] Es was gabautet habe ) überallständigkeit"
+   }
+  }
+ },
+ "best": {
+  "step": 250,
+  "names_cer": 0.8937,
+  "h12": {
+   "h00": {
+    "hyp": "Ed . Fenzl",
+    "span_hit": false
+   },
+   "h01": {
+    "hyp": "ist",
+    "cer": 0.929,
+    "word_acc": 0.0
+   },
+   "h02": {
+    "hyp": "27|",
+    "span_hit": false
+   },
+   "h03": {
+    "hyp": "eckten"
+   },
+   "h04": {
+    "hyp": "Papay"
+   },
+   "h05": {
+    "hyp": "23 ."
+   },
+   "h06": {
+    "hyp": "B. U.M ."
+   },
+   "h07": {
+    "hyp": "2 ) Den könn . Nov ist dem häufigen Schön unden",
+    "cer": 0.429,
+    "word_acc": 0.571
+   },
+   "h08": {
+    "hyp": "Exrechniger 2 Kinder nämlich ein Sohn und",
+    "span_hit": true
+   },
+   "h09": {
+    "hyp": "Die Mädchen geboren welche die Namen neuung ,",
+    "span_hit": false
+   },
+   "h10": {
+    "hyp": "das Wädchen Mergend und der Sohn Joseph erhielt .",
+    "span_hit": {
+     "das Mädchen": false,
+     "und der Sohn Joseph": true
+    }
+   },
+   "h11": {
+    "hyp": "[ ! ] übernomme war befanna Glašmann ."
+   }
+  },
+  "mm006_500": {
+   "n": 500,
+   "cer": 0.0562,
+   "word_acc": 0.7736
+  },
+  "names": {
+   "n": 105,
+   "cer": 0.8937,
+   "word_acc": 0.0,
+   "detail": {
+    "occupation:38666": {
+     "hyp": "xx",
+     "cer": 1.0,
+     "word_acc": 0.0
+    },
+    "occupation:38678": {
+     "hyp": "Weltan/",
+     "cer": 0.857,
+     "word_acc": 0.0
+    },
+    "occupation:38693": {
+     "hyp": "die",
+     "cer": 0.833,
+     "word_acc": 0.0
+    },
+    "occupation:38696": {
+     "hyp": "22 .",
+     "cer": 1.0,
+     "word_acc": 0.0
+    },
+    "name:33739": {
+     "hyp": "ist .",
+     "cer": 0.875,
+     "word_acc": 0.0
+    },
+    "date:33739": {
+     "hyp": "Zu|",
+     "span_hit": {
+      "28": false,
+      "1845": false
+     }
+    },
+    "occupation:33739": {
+     "hyp": ".",
+     "cer": 1.0,
+     "word_acc": 0.0
+    },
+    "name:38666": {
+     "hyp": "4/2",
+     "cer": 1.0,
+     "word_acc": 0.0
+    },
+    "date:38666": {
+     "hyp": "xx",
+     "span_hit": {
+      "20": false,
+      "1855": false
+     }
+    },
+    "name:38678": {
+     "hyp": "icher",
+     "cer": 0.824,
+     "word_acc": 0.0
+    },
+    "date:38678": {
+     "hyp": "Ergarten",
+     "span_hit": {
+      "10": false,
+      "1864": false
+     }
+    },
+    "name:38693": {
+     "hyp": "„ 2 . März",
+     "cer": 0.875,
+     "word_acc": 0.0
+    },
+    "date:38693": {
+     "hyp": "neuen",
+     "span_hit": {
+      "30": false,
+      "1867": false
+     }
+    },
+    "name:38696": {
+     "hyp": ".",
+     "cer": 1.0,
+     "word_acc": 0.0
+    },
+    "date:38696": {
+     "hyp": "Ges . 9 -",
+     "span_hit": {
+      "14": false,
+      "1869": false
+     }
+    },
+    "name:3763": {
+     "hyp": "Wissen",
+     "cer": 0.875,
+     "word_acc": 0.0
+    },
+    "date:3763": {
+     "hyp": "Ed . Fenzl .",
+     "span_hit": {
+      "18": false,
+      "1831": false
+     }
+    },
+    "name:3766": {
+     "hyp": "Fussil",
+     "cer": 0.867,
+     "word_acc": 0.0
+    },
+    "date:3766": {
+     "hyp": "Bergeschmack",
+     "span_hit": {
+      "18": false,
+      "1864": false
+     }
+    },
+    "name:6403": {
+     "hyp": "sicher",
+     "cer": 0.688,
+     "word_acc": 0.0
+    },
+    "date:6403": {
+     "hyp": "Schöne",
+     "span_hit": {
+      "18": false,
+      "1833": false
+     }
+    },
+    "name:6412": {
+     "hyp": "Güstrow",
+     "cer": 0.929,
+     "word_acc": 0.0
+    },
+    "date:6412": {
+     "hyp": "Man ...",
+     "span_hit": {
+      "15": false,
+      "1872": false
+     }
+    },
+    "name:6446": {
+     "hyp": "Morgkehn |",
+     "cer": 0.867,
+     "word_acc": 0.0
+    },
+    "date:6446": {
+     "hyp": "zugleich",
+     "span_hit": {
+      "14": false,
+      "1866": false
+     }
+    },
+    "name:6449": {
+     "hyp": "Höchel",
+     "cer": 0.833,
+     "word_acc": 0.0
+    },
+    "date:6449": {
+     "hyp": "an die",
+     "span_hit": {
+      "2": false,
+      "1870": false
+     }
+    },
+    "name:6500": {
+     "hyp": "Secreturen",
+     "cer": 0.824,
+     "word_acc": 0.0
+    },
+    "date:6500": {
+     "hyp": "„ „ stellte ) Breite der Bahnschein",
+     "span_hit": {
+      "18": false,
+      "1872": false
+     }
+    },
+    "name:38035": {
+     "hyp": "1 . ) Studem F. Steechs.Münkle",
+     "cer": 1.562,
+     "word_acc": 0.0
+    },
+    "date:38035": {
+     "hyp": "18.6.30",
+     "span_hit": {
+      "19": false,
+      "1857": false
+     }
+    },
+    "name:38037": {
+     "hyp": "1/5",
+     "cer": 1.0,
+     "word_acc": 0.0
+    },
+    "date:38037": {
+     "hyp": "xx",
+     "span_hit": {
+      "23": false,
+      "1831": false
+     }
+    },
+    "name:38098": {
+     "hyp": "u. K.",
+     "cer": 0.933,
+     "word_acc": 0.0
+    },
+    "date:38098": {
+     "hyp": "( xxx",
+     "span_hit": {
+      "8": false,
+      "1837": false
+     }
+    },
+    "name:38099": {
+     "hyp": "u. Klück",
+     "cer": 0.882,
+     "word_acc": 0.0
+    },
+    "date:38099": {
+     "hyp": "Ed . Fenzl",
+     "span_hit": {
+      "10": false,
+      "1836": false
+     }
+    },
+    "name:38106": {
+     "hyp": "Wünsche",
+     "cer": 0.917,
+     "word_acc": 0.0
+    },
+    "date:38106": {
+     "hyp": "M. M. 217",
+     "span_hit": {
+      "14": false,
+      "1841": false
+     }
+    },
+    "name:38113": {
+     "hyp": "Erx",
+     "cer": 0.941,
+     "word_acc": 0.0
+    },
+    "date:38113": {
+     "hyp": "MWustrow 12",
+     "span_hit": {
+      "28": false,
+      "1843": false
+     }
+    },
+    "name:38315": {
+     "hyp": "Jahre III/2 m.",
+     "cer": 0.875,
+     "word_acc": 0.0
+    },
+    "date:38315": {
+     "hyp": "Ed . 9 . 20 .",
+     "span_hit": {
+      "28": false,
+      "1823": false
+     }
+    },
+    "name:38622": {
+     "hyp": "Bereits",
+     "cer": 0.941,
+     "word_acc": 0.0
+    },
+    "date:38622": {
+     "hyp": "8i",
+     "span_hit": {
+      "4": false,
+      "1823": false
+     }
+    },
+    "name:38623": {
+     "hyp": "Edizin",
+     "cer": 0.941,
+     "word_acc": 0.0
+    },
+    "date:38623": {
+     "hyp": "Ed . August 1891",
+     "span_hit": {
+      "9": true,
+      "1825": false
+     }
+    },
+    "name:38624": {
+     "hyp": "xx",
+     "cer": 1.0,
+     "word_acc": 0.0
+    },
+    "date:38624": {
+     "hyp": "8 . 849",
+     "span_hit": {
+      "11": false,
+      "1825": false
+     }
+    },
+    "name:38627": {
+     "hyp": "Ges .",
+     "cer": 0.875,
+     "word_acc": 0.0
+    },
+    "date:38627": {
+     "hyp": "M. M. Barlach",
+     "span_hit": {
+      "29": false,
+      "1829": false
+     }
+    },
+    "name:38628": {
+     "hyp": "xx",
+     "cer": 1.0,
+     "word_acc": 0.0
+    },
+    "date:38628": {
+     "hyp": "Bes .",
+     "span_hit": {
+      "21": false,
+      "1829": false
+     }
+    },
+    "name:38636": {
+     "hyp": "Ed . Fenzl",
+     "cer": 0.727,
+     "word_acc": 0.0
+    },
+    "date:38636": {
+     "hyp": "Wth . 10",
+     "span_hit": {
+      "22": false,
+      "1834": false
+     }
+    },
+    "name:38639": {
+     "hyp": "K. K.",
+     "cer": 0.933,
+     "word_acc": 0.0
+    },
+    "date:38639": {
+     "hyp": "AA.23 de xx",
+     "span_hit": {
+      "9": false,
+      "1835": false
+     }
+    },
+    "name:38640": {
+     "hyp": "u. H. 217",
+     "cer": 0.938,
+     "word_acc": 0.0
+    },
+    "date:38640": {
+     "hyp": "Maraldi",
+     "span_hit": {
+      "26": false,
+      "1836": false
+     }
+    },
+    "name:38672": {
+     "hyp": "xx",
+     "cer": 1.0,
+     "word_acc": 0.0
+    },
+    "date:38672": {
+     "hyp": "teil",
+     "span_hit": {
+      "11": false,
+      "1858": false
+     }
+    },
+    "name:38740": {
+     "hyp": "Hans.Hüller",
+     "cer": 0.833,
+     "word_acc": 0.0
+    },
+    "date:38740": {
+     "hyp": "Wth .",
+     "span_hit": {
+      "28te": false
+     }
+    },
+    "name:38744": {
+     "hyp": "Bd : /e",
+     "cer": 0.889,
+     "word_acc": 0.0
+    },
+    "date:38744": {
+     "hyp": "die in iſt",
+     "span_hit": {
+      "12": false,
+      "1849": false
+     }
+    },
+    "name:38745": {
+     "hyp": "Gut [ ... ]",
+     "cer": 0.812,
+     "word_acc": 0.0
+    },
+    "date:38745": {
+     "hyp": "hin wäre mit",
+     "span_hit": {
+      "Juni": false
+     }
+    },
+    "name:38746": {
+     "hyp": "Mresbadhn.~",
+     "cer": 0.727,
+     "word_acc": 0.0
+    },
+    "date:38746": {
+     "hyp": "Majrz e. M.",
+     "span_hit": {
+      "9": false,
+      "1857": false
+     }
+    },
+    "name:38751": {
+     "hyp": "Gute MNorg",
+     "cer": 0.733,
+     "word_acc": 0.0
+    },
+    "date:38751": {
+     "hyp": "1851 . An-xx",
+     "span_hit": {
+      "18te": false
+     }
+    },
+    "name:38754": {
+     "hyp": "Besbadr 29",
+     "cer": 0.786,
+     "word_acc": 0.0
+    },
+    "date:38754": {
+     "hyp": "bald",
+     "span_hit": {
+      "21": false,
+      "1873": false
+     }
+    },
+    "name:38755": {
+     "hyp": "Arbeiten der",
+     "cer": 0.867,
+     "word_acc": 0.0
+    },
+    "date:38755": {
+     "hyp": "2. das",
+     "span_hit": {
+      "25": false,
+      "1875": false
+     }
+    },
+    "name:38780": {
+     "hyp": "die",
+     "cer": 0.938,
+     "word_acc": 0.0
+    },
+    "date:38780": {
+     "hyp": "2.6 Uhr",
+     "span_hit": {
+      "8": false,
+      "1851": false
+     }
+    },
+    "name:38782": {
+     "hyp": "Schluss",
+     "cer": 0.917,
+     "word_acc": 0.0
+    },
+    "date:38782": {
+     "hyp": "sein einem <...... > < /back > < /text >",
+     "span_hit": {
+      "7": false,
+      "1875": false
+     }
+    },
+    "name:38783": {
+     "hyp": "Am 9 Uhr",
+     "cer": 0.867,
+     "word_acc": 0.0
+    },
+    "date:38783": {
+     "hyp": "Hier nach ...",
+     "span_hit": {
+      "21": false,
+      "1873": false
+     }
+    },
+    "name:38786": {
+     "hyp": "xx",
+     "cer": 1.0,
+     "word_acc": 0.0
+    },
+    "date:38786": {
+     "hyp": "Gesellschaft v. Maßttümer",
+     "span_hit": {
+      "20": false,
+      "1856": false
+     }
+    },
+    "name:38787": {
+     "hyp": "Gemette .",
+     "cer": 0.625,
+     "word_acc": 0.0
+    },
+    "date:38787": {
+     "hyp": "Gesellschaft v. Maßttümer",
+     "span_hit": {
+      "20": false,
+      "1856": false
+     }
+    },
+    "name:38789": {
+     "hyp": "freiſche",
+     "cer": 0.909,
+     "word_acc": 0.0
+    },
+    "date:38789": {
+     "hyp": "Stampfer",
+     "span_hit": {
+      "15": false,
+      "1863": false
+     }
+    },
+    "name:38792": {
+     "hyp": "Stropfs",
+     "cer": 0.833,
+     "word_acc": 0.0
+    },
+    "date:38792": {
+     "hyp": "den Wir xxx",
+     "span_hit": {
+      "6": false,
+      "1874": false
+     }
+    },
+    "name:38793": {
+     "hyp": "Strauss . 2 ei",
+     "cer": 0.941,
+     "word_acc": 0.0
+    },
+    "date:38793": {
+     "hyp": "„ „ Schreiberungskomme „",
+     "span_hit": {
+      "19": false,
+      "1875": false
+     }
+    },
+    "name:38796": {
+     "hyp": "Ed . Fenzl",
+     "cer": 0.727,
+     "word_acc": 0.0
+    },
+    "date:38796": {
+     "hyp": "Marga",
+     "span_hit": {
+      "11": false,
+      "1846": false
+     }
+    },
+    "name:38800": {
+     "hyp": "Wasser",
+     "cer": 0.857,
+     "word_acc": 0.0
+    },
+    "date:38800": {
+     "hyp": "Weltlauf von",
+     "span_hit": {
+      "8": false,
+      "1857": false
+     }
+    },
+    "name:38806": {
+     "hyp": "Menso 10 Uhr",
+     "cer": 0.8,
+     "word_acc": 0.0
+    },
+    "date:38806": {
+     "hyp": "soll",
+     "span_hit": {
+      "30": false,
+      "1865": false
+     }
+    },
+    "name:38807": {
+     "hyp": "u. M. |",
+     "cer": 0.917,
+     "word_acc": 0.0
+    },
+    "date:38807": {
+     "hyp": ".",
+     "span_hit": {
+      "6": false,
+      "1867": false
+     }
+    },
+    "name:38809": {
+     "hyp": "Stunde",
+     "cer": 0.846,
+     "word_acc": 0.0
+    },
+    "date:38809": {
+     "hyp": "der „ schließen habe",
+     "span_hit": {
+      "5": false,
+      "1872": false
+     }
+    },
+    "name:38810": {
+     "hyp": "Grafen.xx",
+     "cer": 0.917,
+     "word_acc": 0.0
+    },
+    "date:38810": {
+     "hyp": "2. durch herausstatt",
+     "span_hit": {
+      "26": false,
+      "1874": false
+     }
+    }
+   },
+   "cer_v4subset": 0.9275,
+   "span_hit_rate": 0.0105
+  },
+  "names_beam4": {
+   "n": 105,
+   "cer": 0.8692,
+   "word_acc": 0.0,
+   "detail": {
+    "occupation:38666": {
+     "hyp": "xx",
+     "cer": 1.0,
+     "word_acc": 0.0
+    },
+    "occupation:38678": {
+     "hyp": "Weltan/",
+     "cer": 0.857,
+     "word_acc": 0.0
+    },
+    "occupation:38693": {
+     "hyp": "die er-",
+     "cer": 0.833,
+     "word_acc": 0.0
+    },
+    "occupation:38696": {
+     "hyp": "22 .",
+     "cer": 1.0,
+     "word_acc": 0.0
+    },
+    "name:33739": {
+     "hyp": "19. bei.|",
+     "cer": 0.875,
+     "word_acc": 0.0
+    },
+    "date:33739": {
+     "hyp": "Zu|",
+     "span_hit": {
+      "28": false,
+      "1845": false
+     }
+    },
+    "occupation:33739": {
+     "hyp": "7.|",
+     "cer": 1.0,
+     "word_acc": 0.0
+    },
+    "name:38666": {
+     "hyp": "4/2",
+     "cer": 1.0,
+     "word_acc": 0.0
+    },
+    "date:38666": {
+     "hyp": "xx",
+     "span_hit": {
+      "20": false,
+      "1855": false
+     }
+    },
+    "name:38678": {
+     "hyp": "icher",
+     "cer": 0.824,
+     "word_acc": 0.0
+    },
+    "date:38678": {
+     "hyp": "nach Glogovac",
+     "span_hit": {
+      "10": false,
+      "1864": false
+     }
+    },
+    "name:38693": {
+     "hyp": "„ 2 . März",
+     "cer": 0.875,
+     "word_acc": 0.0
+    },
+    "date:38693": {
+     "hyp": "1.5.35",
+     "span_hit": {
+      "30": false,
+      "1867": false
+     }
+    },
+    "name:38696": {
+     "hyp": ".",
+     "cer": 1.0,
+     "word_acc": 0.0
+    },
+    "date:38696": {
+     "hyp": "Ges . 9 -",
+     "span_hit": {
+      "14": false,
+      "1869": false
+     }
+    },
+    "name:3763": {
+     "hyp": "Wissen",
+     "cer": 0.875,
+     "word_acc": 0.0
+    },
+    "date:3763": {
+     "hyp": "Ed . Fenzl .",
+     "span_hit": {
+      "18": false,
+      "1831": false
+     }
+    },
+    "name:3766": {
+     "hyp": "Familien",
+     "cer": 0.8,
+     "word_acc": 0.0
+    },
+    "date:3766": {
+     "hyp": "abhältniss",
+     "span_hit": {
+      "18": false,
+      "1864": false
+     }
+    },
+    "name:6403": {
+     "hyp": "sicher",
+     "cer": 0.688,
+     "word_acc": 0.0
+    },
+    "date:6403": {
+     "hyp": "Schönen",
+     "span_hit": {
+      "18": false,
+      "1833": false
+     }
+    },
+    "name:6412": {
+     "hyp": "Güstrow",
+     "cer": 0.929,
+     "word_acc": 0.0
+    },
+    "date:6412": {
+     "hyp": "Man¬",
+     "span_hit": {
+      "15": false,
+      "1872": false
+     }
+    },
+    "name:6446": {
+     "hyp": "Maßbacher,",
+     "cer": 0.6,
+     "word_acc": 0.0
+    },
+    "date:6446": {
+     "hyp": "nicht enthalten",
+     "span_hit": {
+      "14": false,
+      "1866": false
+     }
+    },
+    "name:6449": {
+     "hyp": "Lieber",
+     "cer": 0.722,
+     "word_acc": 0.0
+    },
+    "date:6449": {
+     "hyp": "Hofburg",
+     "span_hit": {
+      "2": false,
+      "1870": false
+     }
+    },
+    "name:6500": {
+     "hyp": "Secreturen",
+     "cer": 0.824,
+     "word_acc": 0.0
+    },
+    "date:6500": {
+     "hyp": "„ „ statteten Weise zu reagieren .",
+     "span_hit": {
+      "18": false,
+      "1872": false
+     }
+    },
+    "name:38035": {
+     "hyp": "1 . ) Stunden Abtheils",
+     "cer": 1.062,
+     "word_acc": 0.0
+    },
+    "date:38035": {
+     "hyp": "18.6.30",
+     "span_hit": {
+      "19": false,
+      "1857": false
+     }
+    },
+    "name:38037": {
+     "hyp": "1/5",
+     "cer": 1.0,
+     "word_acc": 0.0
+    },
+    "date:38037": {
+     "hyp": "xx",
+     "span_hit": {
+      "23": false,
+      "1831": false
+     }
+    },
+    "name:38098": {
+     "hyp": "u. xx",
+     "cer": 0.933,
+     "word_acc": 0.0
+    },
+    "date:38098": {
+     "hyp": "( xxx",
+     "span_hit": {
+      "8": false,
+      "1837": false
+     }
+    },
+    "name:38099": {
+     "hyp": "7 Uhr",
+     "cer": 0.824,
+     "word_acc": 0.0
+    },
+    "date:38099": {
+     "hyp": "Ed . Fenzl",
+     "span_hit": {
+      "10": false,
+      "1836": false
+     }
+    },
+    "name:38106": {
+     "hyp": "Wünstrow",
+     "cer": 0.75,
+     "word_acc": 0.0
+    },
+    "date:38106": {
+     "hyp": "M. H. 217",
+     "span_hit": {
+      "14": false,
+      "1841": false
+     }
+    },
+    "name:38113": {
+     "hyp": "Erz . Johann",
+     "cer": 0.765,
+     "word_acc": 0.0
+    },
+    "date:38113": {
+     "hyp": "Herzlich",
+     "span_hit": {
+      "28": false,
+      "1843": false
+     }
+    },
+    "name:38315": {
+     "hyp": "sicher Nr .",
+     "cer": 0.875,
+     "word_acc": 0.0
+    },
+    "date:38315": {
+     "hyp": "Ed . 9 . 20 .",
+     "span_hit": {
+      "28": false,
+      "1823": false
+     }
+    },
+    "name:38622": {
+     "hyp": "Bereits",
+     "cer": 0.941,
+     "word_acc": 0.0
+    },
+    "date:38622": {
+     "hyp": "8iMKonnerOthe",
+     "span_hit": {
+      "4": false,
+      "1823": false
+     }
+    },
+    "name:38623": {
+     "hyp": "Edizin",
+     "cer": 0.941,
+     "word_acc": 0.0
+    },
+    "date:38623": {
+     "hyp": "Ed . August 1891",
+     "span_hit": {
+      "9": true,
+      "1825": false
+     }
+    },
+    "name:38624": {
+     "hyp": "xx",
+     "cer": 1.0,
+     "word_acc": 0.0
+    },
+    "date:38624": {
+     "hyp": "8 . 849",
+     "span_hit": {
+      "11": false,
+      "1825": false
+     }
+    },
+    "name:38627": {
+     "hyp": "Ges .",
+     "cer": 0.875,
+     "word_acc": 0.0
+    },
+    "date:38627": {
+     "hyp": "M. M. Barlach",
+     "span_hit": {
+      "29": false,
+      "1829": false
+     }
+    },
+    "name:38628": {
+     "hyp": "xx",
+     "cer": 1.0,
+     "word_acc": 0.0
+    },
+    "date:38628": {
+     "hyp": "10 Uhr . Min .",
+     "span_hit": {
+      "21": false,
+      "1829": false
+     }
+    },
+    "name:38636": {
+     "hyp": "Ed . Fenzl",
+     "cer": 0.727,
+     "word_acc": 0.0
+    },
+    "date:38636": {
+     "hyp": "Wth . 10",
+     "span_hit": {
+      "22": false,
+      "1834": false
+     }
+    },
+    "name:38639": {
+     "hyp": "K. K.",
+     "cer": 0.933,
+     "word_acc": 0.0
+    },
+    "date:38639": {
+     "hyp": "Glücko",
+     "span_hit": {
+      "9": false,
+      "1835": false
+     }
+    },
+    "name:38640": {
+     "hyp": "u. H. 217",
+     "cer": 0.938,
+     "word_acc": 0.0
+    },
+    "date:38640": {
+     "hyp": "Marga",
+     "span_hit": {
+      "26": false,
+      "1836": false
+     }
+    },
+    "name:38672": {
+     "hyp": "xx",
+     "cer": 1.0,
+     "word_acc": 0.0
+    },
+    "date:38672": {
+     "hyp": "teilich",
+     "span_hit": {
+      "11": false,
+      "1858": false
+     }
+    },
+    "name:38740": {
+     "hyp": "konstruktor",
+     "cer": 0.917,
+     "word_acc": 0.0
+    },
+    "date:38740": {
+     "hyp": "Geschützfeuer",
+     "span_hit": {
+      "28te": false
+     }
+    },
+    "name:38744": {
+     "hyp": "zudringen",
+     "cer": 0.833,
+     "word_acc": 0.0
+    },
+    "date:38744": {
+     "hyp": "Friedhof .",
+     "span_hit": {
+      "12": false,
+      "1849": false
+     }
+    },
+    "name:38745": {
+     "hyp": "Gute Masse , und",
+     "cer": 0.75,
+     "word_acc": 0.0
+    },
+    "date:38745": {
+     "hyp": "hin wäre mit",
+     "span_hit": {
+      "Juni": false
+     }
+    },
+    "name:38746": {
+     "hyp": "Mresbadhn . 2 .",
+     "cer": 0.864,
+     "word_acc": 0.0
+    },
+    "date:38746": {
+     "hyp": "Geschützfeuer an .",
+     "span_hit": {
+      "9": false,
+      "1857": false
+     }
+    },
+    "name:38751": {
+     "hyp": "Gesellschaft vor",
+     "cer": 0.8,
+     "word_acc": 0.0
+    },
+    "date:38751": {
+     "hyp": "1851 xx",
+     "span_hit": {
+      "18te": false
+     }
+    },
+    "name:38754": {
+     "hyp": "Besbacher 2",
+     "cer": 0.571,
+     "word_acc": 0.0
+    },
+    "date:38754": {
+     "hyp": "abelbstens",
+     "span_hit": {
+      "21": false,
+      "1873": false
+     }
+    },
+    "name:38755": {
+     "hyp": "Arbeiten der",
+     "cer": 0.867,
+     "word_acc": 0.0
+    },
+    "date:38755": {
+     "hyp": "2. bezüglich auf die Pflanzen",
+     "span_hit": {
+      "25": false,
+      "1875": false
+     }
+    },
+    "name:38780": {
+     "hyp": "die",
+     "cer": 0.938,
+     "word_acc": 0.0
+    },
+    "date:38780": {
+     "hyp": "2.6 Uhr",
+     "span_hit": {
+      "8": false,
+      "1851": false
+     }
+    },
+    "name:38782": {
+     "hyp": "Schluss",
+     "cer": 0.917,
+     "word_acc": 0.0
+    },
+    "date:38782": {
+     "hyp": "sein einem <...... > < /back > < /text >",
+     "span_hit": {
+      "7": false,
+      "1875": false
+     }
+    },
+    "name:38783": {
+     "hyp": "Am 9 Uhr",
+     "cer": 0.867,
+     "word_acc": 0.0
+    },
+    "date:38783": {
+     "hyp": "Hofburg",
+     "span_hit": {
+      "21": false,
+      "1873": false
+     }
+    },
+    "name:38786": {
+     "hyp": "xx",
+     "cer": 1.0,
+     "word_acc": 0.0
+    },
+    "date:38786": {
+     "hyp": "Gesellschaft vorenthält .",
+     "span_hit": {
+      "20": false,
+      "1856": false
+     }
+    },
+    "name:38787": {
+     "hyp": "Gemette .",
+     "cer": 0.625,
+     "word_acc": 0.0
+    },
+    "date:38787": {
+     "hyp": "Gesellschaft vorenthält .",
+     "span_hit": {
+      "20": false,
+      "1856": false
+     }
+    },
+    "name:38789": {
+     "hyp": "freu|",
+     "cer": 0.818,
+     "word_acc": 0.0
+    },
+    "date:38789": {
+     "hyp": "Stampfer",
+     "span_hit": {
+      "15": false,
+      "1863": false
+     }
+    },
+    "name:38792": {
+     "hyp": "Stropfes , 36",
+     "cer": 0.917,
+     "word_acc": 0.0
+    },
+    "date:38792": {
+     "hyp": "den Wir xxx",
+     "span_hit": {
+      "6": false,
+      "1874": false
+     }
+    },
+    "name:38793": {
+     "hyp": "Strauss . Berg wurden",
+     "cer": 1.0,
+     "word_acc": 0.0
+    },
+    "date:38793": {
+     "hyp": "„ „ zusammenge-",
+     "span_hit": {
+      "19": false,
+      "1875": false
+     }
+    },
+    "name:38796": {
+     "hyp": "Ed . Fenzl",
+     "cer": 0.727,
+     "word_acc": 0.0
+    },
+    "date:38796": {
+     "hyp": "Marga",
+     "span_hit": {
+      "11": false,
+      "1846": false
+     }
+    },
+    "name:38800": {
+     "hyp": "Wasser",
+     "cer": 0.857,
+     "word_acc": 0.0
+    },
+    "date:38800": {
+     "hyp": "[ 1857. verbr > zu",
+     "span_hit": {
+      "8": true,
+      "1857": true
+     }
+    },
+    "name:38806": {
+     "hyp": "Menso 10 Uhr",
+     "cer": 0.8,
+     "word_acc": 0.0
+    },
+    "date:38806": {
+     "hyp": "soll auf",
+     "span_hit": {
+      "30": false,
+      "1865": false
+     }
+    },
+    "name:38807": {
+     "hyp": "iſt .",
+     "cer": 0.833,
+     "word_acc": 0.0
+    },
+    "date:38807": {
+     "hyp": ".",
+     "span_hit": {
+      "6": false,
+      "1867": false
+     }
+    },
+    "name:38809": {
+     "hyp": "St. Georgiska",
+     "cer": 0.923,
+     "word_acc": 0.0
+    },
+    "date:38809": {
+     "hyp": "es „ schließen habe",
+     "span_hit": {
+      "5": false,
+      "1872": false
+     }
+    },
+    "name:38810": {
+     "hyp": "Gutschen|",
+     "cer": 0.917,
+     "word_acc": 0.0
+    },
+    "date:38810": {
+     "hyp": "„ angehalten 4",
+     "span_hit": {
+      "26": false,
+      "1874": false
+     }
+    }
+   },
+   "cer_v4subset": 0.9275,
+   "span_hit_rate": 0.0316
+  }
+ },
+ "train_seconds": 831,
+ "total_seconds": 1192,
+ "samples": 63693,
+ "seeds_fit": {
+  "n": 12,
+  "cer": 0.8927
+ },
+ "pages": 1478,
+ "max_steps": 500
+}

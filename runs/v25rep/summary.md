@@ -1,5 +1,9 @@
 # v25rep - v25 recipe replicated with fresh seeds 4/5/6
 
+> **Correction 2026-11-09 (v25beam finding):** all numbers in this record were produced with trocr-kurrent's model-DEFAULT decoding, which is beam-4 + early_stopping + length_penalty 2.0 - not greedy. The column "names CER (best-on-dev)" and all reference points quoted here (v25, v26a, v26b, base) share that same default decode, so the comparisons and the replication verdict stand as decoding-consistent. True-greedy at v25-recipe checkpoints is ~0.022 CER worse (see runs/v25beam).
+
+
+
 Kernel: https://www.kaggle.com/code/reihlinstinct/kurrent-v25rep-run-1 (script scripts/kaggle_kernel_v25rep.py, commit 2318d40 - exact v25 config, only the seeds changed).
 
 Purpose: test whether v25's 0.8685 was a favorable seed draw or a reproducible effect of the v25 recipe. Same held-out v5 names set (105 cells, 50 held-out IdNrs), same EVAL500 (page MM_1_006, never in training). Per-seed best-on-dev checkpoint selection by names CER, as in v25.
