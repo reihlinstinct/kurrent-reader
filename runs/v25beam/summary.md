@@ -21,7 +21,7 @@ dh-unibe/trocr-kurrent's generation_config defaults to **num_beams=4, early_stop
 - **v25-vs-v27 gap narrows under matched decoding**: previously stated as v25 0.8685 vs v27 "greedy" 0.8921 (cross-decoding, misleading). Under identical beam-4: v25 recipe 0.8675 (beam-4-selected ckpts) / 0.8718 (greedy-selected ckpts) vs v27 beam-4 0.8729. v25 still ahead, by ~0.001-0.005. v27's forced true greedy (0.8921) matches v25beam's (0.8934) - cross-run consistent.
 - **Selection decode changed this run**: v25/v25rep selected best-on-dev with default beam-4; v25beam selected with true greedy (the beam-4 column here is beam-4 at greedy-selected checkpoints). The 0.8675 vs 0.8718 difference is consistent with selection-decode mismatch plus checkpoint noise.
 - **EVAL500 not cross-comparable this run**: v25beam's EVAL500/h12/seeds-fit evals ran true greedy (0.0587 mean); all prior EVAL500 numbers were default beam-4 (v25rep 0.0571). Difference is small but the decode differs.
-- **Never measured**: base model under true greedy. The base column (0.8928) is default beam-4 only.
+- ~~Never measured: base model under true greedy.~~ **Measured in runs/v25sweep**: base + true greedy = 0.9104; the full base-vs-trained decode matrix is there.
 
 Practical rule going forward: every eval must pin its decoding explicitly (num_beams, early_stopping, length_penalty) and record it in the timing JSON; default decode of trocr-kurrent is beam-4/early-stopping/lp-2.0.
 
