@@ -1,0 +1,17 @@
+{
+  "id": "reihlinstinct/kurrent-seg-finetune-v1",
+  "id_no": 144145686,
+  "title": "kurrent-seg-finetune-v1",
+  "code_file": "kurrent-seg-finetune-v1.py",
+  "language": "python",
+  "kernel_type": "script",
+  "is_private": true,
+  "enable_gpu": true,
+  "enable_tpu": false,
+  "enable_internet": true,
+  "keywords": [],
+  "dataset_sources": [],
+  "kernel_sources": [],
+  "competition_sources": [],
+  "model_sources": []
+}
