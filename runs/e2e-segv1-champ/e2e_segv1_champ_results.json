@@ -1,0 +1,969 @@
+{
+ "eval": "EVAL500 (500 lines, 190 pages, MM_1_006 held out from both models)",
+ "seg_model": "segv1 best_0.6523 (recall 0.9426 on separate 29-page MM_1_006 test)",
+ "recog_model": "v25sweep champion (names CER 0.8675-0.8685)",
+ "decode": {
+  "num_beams": 4,
+  "early_stopping": true,
+  "length_penalty": 2.0,
+  "note": "model-default, identical to training-kernel evals"
+ },
+ "gt_crop_cer": 0.0609,
+ "seg_line_recall_on_eval500_pages": 1.0,
+ "seg_matched_lines": 500,
+ "seg_missed_lines": 0,
+ "e2e_cer_seg_crops": 0.0644,
+ "e2e_cer_note": "missed GT lines counted as full-length errors; matched lines read from seg-detected crops",
+ "per_page": {
+  "01460.jpg": {
+   "gt": 4,
+   "pred": 54,
+   "hits": 4
+  },
+  "01461.jpg": {
+   "gt": 2,
+   "pred": 64,
+   "hits": 2
+  },
+  "01462.jpg": {
+   "gt": 4,
+   "pred": 50,
+   "hits": 4
+  },
+  "01463.jpg": {
+   "gt": 2,
+   "pred": 64,
+   "hits": 2
+  },
+  "01464.jpg": {
+   "gt": 1,
+   "pred": 48,
+   "hits": 1
+  },
+  "01465.jpg": {
+   "gt": 1,
+   "pred": 53,
+   "hits": 1
+  },
+  "01467.jpg": {
+   "gt": 2,
+   "pred": 47,
+   "hits": 2
+  },
+  "01468.jpg": {
+   "gt": 2,
+   "pred": 50,
+   "hits": 2
+  },
+  "01469.jpg": {
+   "gt": 3,
+   "pred": 46,
+   "hits": 3
+  },
+  "01470.jpg": {
+   "gt": 2,
+   "pred": 46,
+   "hits": 2
+  },
+  "01471.jpg": {
+   "gt": 3,
+   "pred": 51,
+   "hits": 3
+  },
+  "01473.jpg": {
+   "gt": 1,
+   "pred": 58,
+   "hits": 1
+  },
+  "01474.jpg": {
+   "gt": 4,
+   "pred": 46,
+   "hits": 4
+  },
+  "01475.jpg": {
+   "gt": 1,
+   "pred": 57,
+   "hits": 1
+  },
+  "01476.jpg": {
+   "gt": 3,
+   "pred": 55,
+   "hits": 3
+  },
+  "01477.jpg": {
+   "gt": 3,
+   "pred": 64,
+   "hits": 3
+  },
+  "01478.jpg": {
+   "gt": 4,
+   "pred": 52,
+   "hits": 4
+  },
+  "01479.jpg": {
+   "gt": 1,
+   "pred": 55,
+   "hits": 1
+  },
+  "01480.jpg": {
+   "gt": 2,
+   "pred": 50,
+   "hits": 2
+  },
+  "01481.jpg": {
+   "gt": 5,
+   "pred": 46,
+   "hits": 5
+  },
+  "01482.jpg": {
+   "gt": 2,
+   "pred": 60,
+   "hits": 2
+  },
+  "01483.jpg": {
+   "gt": 2,
+   "pred": 58,
+   "hits": 2
+  },
+  "01484.jpg": {
+   "gt": 3,
+   "pred": 50,
+   "hits": 3
+  },
+  "01485.jpg": {
+   "gt": 6,
+   "pred": 46,
+   "hits": 6
+  },
+  "01486.jpg": {
+   "gt": 6,
+   "pred": 52,
+   "hits": 6
+  },
+  "01487.jpg": {
+   "gt": 2,
+   "pred": 55,
+   "hits": 2
+  },
+  "01488.jpg": {
+   "gt": 2,
+   "pred": 53,
+   "hits": 2
+  },
+  "01489.jpg": {
+   "gt": 3,
+   "pred": 50,
+   "hits": 3
+  },
+  "01490.jpg": {
+   "gt": 1,
+   "pred": 45,
+   "hits": 1
+  },
+  "01491.jpg": {
+   "gt": 2,
+   "pred": 45,
+   "hits": 2
+  },
+  "01492.jpg": {
+   "gt": 1,
+   "pred": 48,
+   "hits": 1
+  },
+  "01493.jpg": {
+   "gt": 1,
+   "pred": 57,
+   "hits": 1
+  },
+  "01494.jpg": {
+   "gt": 6,
+   "pred": 52,
+   "hits": 6
+  },
+  "01495.jpg": {
+   "gt": 2,
+   "pred": 59,
+   "hits": 2
+  },
+  "01496.jpg": {
+   "gt": 3,
+   "pred": 59,
+   "hits": 3
+  },
+  "01497.jpg": {
+   "gt": 4,
+   "pred": 56,
+   "hits": 4
+  },
+  "01498.jpg": {
+   "gt": 1,
+   "pred": 65,
+   "hits": 1
+  },
+  "01499.jpg": {
+   "gt": 4,
+   "pred": 54,
+   "hits": 4
+  },
+  "01500.jpg": {
+   "gt": 3,
+   "pred": 55,
+   "hits": 3
+  },
+  "01501.jpg": {
+   "gt": 3,
+   "pred": 49,
+   "hits": 3
+  },
+  "01502.jpg": {
+   "gt": 4,
+   "pred": 49,
+   "hits": 4
+  },
+  "01504.jpg": {
+   "gt": 3,
+   "pred": 52,
+   "hits": 3
+  },
+  "01506.jpg": {
+   "gt": 3,
+   "pred": 48,
+   "hits": 3
+  },
+  "01507.jpg": {
+   "gt": 3,
+   "pred": 48,
+   "hits": 3
+  },
+  "01508.jpg": {
+   "gt": 2,
+   "pred": 48,
+   "hits": 2
+  },
+  "01509.jpg": {
+   "gt": 4,
+   "pred": 51,
+   "hits": 4
+  },
+  "01511.jpg": {
+   "gt": 4,
+   "pred": 53,
+   "hits": 4
+  },
+  "01512.jpg": {
+   "gt": 1,
+   "pred": 55,
+   "hits": 1
+  },
+  "01514.jpg": {
+   "gt": 3,
+   "pred": 46,
+   "hits": 3
+  },
+  "01515.jpg": {
+   "gt": 1,
+   "pred": 48,
+   "hits": 1
+  },
+  "01516.jpg": {
+   "gt": 1,
+   "pred": 59,
+   "hits": 1
+  },
+  "01517.jpg": {
+   "gt": 4,
+   "pred": 51,
+   "hits": 4
+  },
+  "01518.jpg": {
+   "gt": 5,
+   "pred": 66,
+   "hits": 5
+  },
+  "01519.jpg": {
+   "gt": 4,
+   "pred": 65,
+   "hits": 4
+  },
+  "01520.jpg": {
+   "gt": 4,
+   "pred": 58,
+   "hits": 4
+  },
+  "01521.jpg": {
+   "gt": 2,
+   "pred": 48,
+   "hits": 2
+  },
+  "01522.jpg": {
+   "gt": 1,
+   "pred": 50,
+   "hits": 1
+  },
+  "01523.jpg": {
+   "gt": 1,
+   "pred": 59,
+   "hits": 1
+  },
+  "01524.jpg": {
+   "gt": 1,
+   "pred": 51,
+   "hits": 1
+  },
+  "01525.jpg": {
+   "gt": 2,
+   "pred": 58,
+   "hits": 2
+  },
+  "01526.jpg": {
+   "gt": 3,
+   "pred": 52,
+   "hits": 3
+  },
+  "01527.jpg": {
+   "gt": 1,
+   "pred": 47,
+   "hits": 1
+  },
+  "01528.jpg": {
+   "gt": 1,
+   "pred": 53,
+   "hits": 1
+  },
+  "01530.jpg": {
+   "gt": 4,
+   "pred": 50,
+   "hits": 4
+  },
+  "01531.jpg": {
+   "gt": 4,
+   "pred": 51,
+   "hits": 4
+  },
+  "01532.jpg": {
+   "gt": 1,
+   "pred": 52,
+   "hits": 1
+  },
+  "01533.jpg": {
+   "gt": 4,
+   "pred": 48,
+   "hits": 4
+  },
+  "01534.jpg": {
+   "gt": 2,
+   "pred": 56,
+   "hits": 2
+  },
+  "01535.jpg": {
+   "gt": 2,
+   "pred": 56,
+   "hits": 2
+  },
+  "01537.jpg": {
+   "gt": 3,
+   "pred": 51,
+   "hits": 3
+  },
+  "01538.jpg": {
+   "gt": 4,
+   "pred": 59,
+   "hits": 4
+  },
+  "01539.jpg": {
+   "gt": 5,
+   "pred": 48,
+   "hits": 5
+  },
+  "01540.jpg": {
+   "gt": 1,
+   "pred": 48,
+   "hits": 1
+  },
+  "01541.jpg": {
+   "gt": 6,
+   "pred": 61,
+   "hits": 6
+  },
+  "01542.jpg": {
+   "gt": 3,
+   "pred": 46,
+   "hits": 3
+  },
+  "01543.jpg": {
+   "gt": 2,
+   "pred": 44,
+   "hits": 2
+  },
+  "01544.jpg": {
+   "gt": 2,
+   "pred": 51,
+   "hits": 2
+  },
+  "01545.jpg": {
+   "gt": 3,
+   "pred": 57,
+   "hits": 3
+  },
+  "01546.jpg": {
+   "gt": 2,
+   "pred": 55,
+   "hits": 2
+  },
+  "01547.jpg": {
+   "gt": 5,
+   "pred": 57,
+   "hits": 5
+  },
+  "01548.jpg": {
+   "gt": 4,
+   "pred": 54,
+   "hits": 4
+  },
+  "01549.jpg": {
+   "gt": 1,
+   "pred": 51,
+   "hits": 1
+  },
+  "01550.jpg": {
+   "gt": 6,
+   "pred": 49,
+   "hits": 6
+  },
+  "01551.jpg": {
+   "gt": 4,
+   "pred": 55,
+   "hits": 4
+  },
+  "01552.jpg": {
+   "gt": 5,
+   "pred": 47,
+   "hits": 5
+  },
+  "01553.jpg": {
+   "gt": 2,
+   "pred": 51,
+   "hits": 2
+  },
+  "01554.jpg": {
+   "gt": 1,
+   "pred": 55,
+   "hits": 1
+  },
+  "01556.jpg": {
+   "gt": 3,
+   "pred": 71,
+   "hits": 3
+  },
+  "01557.jpg": {
+   "gt": 4,
+   "pred": 62,
+   "hits": 4
+  },
+  "01558.jpg": {
+   "gt": 7,
+   "pred": 55,
+   "hits": 7
+  },
+  "01559.jpg": {
+   "gt": 2,
+   "pred": 51,
+   "hits": 2
+  },
+  "01560.jpg": {
+   "gt": 2,
+   "pred": 58,
+   "hits": 2
+  },
+  "01561.jpg": {
+   "gt": 2,
+   "pred": 54,
+   "hits": 2
+  },
+  "01562.jpg": {
+   "gt": 3,
+   "pred": 68,
+   "hits": 3
+  },
+  "01563.jpg": {
+   "gt": 7,
+   "pred": 61,
+   "hits": 7
+  },
+  "01564.jpg": {
+   "gt": 1,
+   "pred": 59,
+   "hits": 1
+  },
+  "01565.jpg": {
+   "gt": 1,
+   "pred": 40,
+   "hits": 1
+  },
+  "01566.jpg": {
+   "gt": 4,
+   "pred": 46,
+   "hits": 4
+  },
+  "01567.jpg": {
+   "gt": 1,
+   "pred": 58,
+   "hits": 1
+  },
+  "01569.jpg": {
+   "gt": 2,
+   "pred": 48,
+   "hits": 2
+  },
+  "01570.jpg": {
+   "gt": 2,
+   "pred": 61,
+   "hits": 2
+  },
+  "01571.jpg": {
+   "gt": 5,
+   "pred": 60,
+   "hits": 5
+  },
+  "01572.jpg": {
+   "gt": 1,
+   "pred": 57,
+   "hits": 1
+  },
+  "01573.jpg": {
+   "gt": 2,
+   "pred": 58,
+   "hits": 2
+  },
+  "01574.jpg": {
+   "gt": 2,
+   "pred": 63,
+   "hits": 2
+  },
+  "01575.jpg": {
+   "gt": 2,
+   "pred": 53,
+   "hits": 2
+  },
+  "01576.jpg": {
+   "gt": 3,
+   "pred": 55,
+   "hits": 3
+  },
+  "01577.jpg": {
+   "gt": 6,
+   "pred": 53,
+   "hits": 6
+  },
+  "01578.jpg": {
+   "gt": 2,
+   "pred": 52,
+   "hits": 2
+  },
+  "01579.jpg": {
+   "gt": 1,
+   "pred": 60,
+   "hits": 1
+  },
+  "01580.jpg": {
+   "gt": 2,
+   "pred": 46,
+   "hits": 2
+  },
+  "01581.jpg": {
+   "gt": 1,
+   "pred": 50,
+   "hits": 1
+  },
+  "01582.jpg": {
+   "gt": 3,
+   "pred": 43,
+   "hits": 3
+  },
+  "01583.jpg": {
+   "gt": 2,
+   "pred": 52,
+   "hits": 2
+  },
+  "01584.jpg": {
+   "gt": 2,
+   "pred": 56,
+   "hits": 2
+  },
+  "01585.jpg": {
+   "gt": 3,
+   "pred": 50,
+   "hits": 3
+  },
+  "01586.jpg": {
+   "gt": 3,
+   "pred": 56,
+   "hits": 3
+  },
+  "01587.jpg": {
+   "gt": 2,
+   "pred": 57,
+   "hits": 2
+  },
+  "01588.jpg": {
+   "gt": 1,
+   "pred": 47,
+   "hits": 1
+  },
+  "01589.jpg": {
+   "gt": 1,
+   "pred": 58,
+   "hits": 1
+  },
+  "01590.jpg": {
+   "gt": 2,
+   "pred": 57,
+   "hits": 2
+  },
+  "01591.jpg": {
+   "gt": 2,
+   "pred": 50,
+   "hits": 2
+  },
+  "01592.jpg": {
+   "gt": 1,
+   "pred": 54,
+   "hits": 1
+  },
+  "01593.jpg": {
+   "gt": 2,
+   "pred": 55,
+   "hits": 2
+  },
+  "01594.jpg": {
+   "gt": 3,
+   "pred": 48,
+   "hits": 3
+  },
+  "01595.jpg": {
+   "gt": 3,
+   "pred": 52,
+   "hits": 3
+  },
+  "01597.jpg": {
+   "gt": 3,
+   "pred": 55,
+   "hits": 3
+  },
+  "01598.jpg": {
+   "gt": 1,
+   "pred": 50,
+   "hits": 1
+  },
+  "01599.jpg": {
+   "gt": 1,
+   "pred": 49,
+   "hits": 1
+  },
+  "01600.jpg": {
+   "gt": 3,
+   "pred": 48,
+   "hits": 3
+  },
+  "01601.jpg": {
+   "gt": 1,
+   "pred": 13,
+   "hits": 1
+  },
+  "01602.jpg": {
+   "gt": 3,
+   "pred": 51,
+   "hits": 3
+  },
+  "01603.jpg": {
+   "gt": 2,
+   "pred": 48,
+   "hits": 2
+  },
+  "01604.jpg": {
+   "gt": 2,
+   "pred": 50,
+   "hits": 2
+  },
+  "01606.jpg": {
+   "gt": 1,
+   "pred": 63,
+   "hits": 1
+  },
+  "01608.jpg": {
+   "gt": 2,
+   "pred": 48,
+   "hits": 2
+  },
+  "01609.jpg": {
+   "gt": 5,
+   "pred": 50,
+   "hits": 5
+  },
+  "01610.jpg": {
+   "gt": 4,
+   "pred": 47,
+   "hits": 4
+  },
+  "01611.jpg": {
+   "gt": 2,
+   "pred": 46,
+   "hits": 2
+  },
+  "01612.jpg": {
+   "gt": 3,
+   "pred": 51,
+   "hits": 3
+  },
+  "01613.jpg": {
+   "gt": 1,
+   "pred": 62,
+   "hits": 1
+  },
+  "01614.jpg": {
+   "gt": 3,
+   "pred": 61,
+   "hits": 3
+  },
+  "01616.jpg": {
+   "gt": 2,
+   "pred": 47,
+   "hits": 2
+  },
+  "01617.jpg": {
+   "gt": 3,
+   "pred": 59,
+   "hits": 3
+  },
+  "01618.jpg": {
+   "gt": 5,
+   "pred": 52,
+   "hits": 5
+  },
+  "01619.jpg": {
+   "gt": 2,
+   "pred": 58,
+   "hits": 2
+  },
+  "01620.jpg": {
+   "gt": 3,
+   "pred": 53,
+   "hits": 3
+  },
+  "01621.jpg": {
+   "gt": 2,
+   "pred": 64,
+   "hits": 2
+  },
+  "01622.jpg": {
+   "gt": 4,
+   "pred": 48,
+   "hits": 4
+  },
+  "01623.jpg": {
+   "gt": 2,
+   "pred": 57,
+   "hits": 2
+  },
+  "01624.jpg": {
+   "gt": 3,
+   "pred": 64,
+   "hits": 3
+  },
+  "01625.jpg": {
+   "gt": 3,
+   "pred": 53,
+   "hits": 3
+  },
+  "01626.jpg": {
+   "gt": 1,
+   "pred": 47,
+   "hits": 1
+  },
+  "01627.jpg": {
+   "gt": 3,
+   "pred": 49,
+   "hits": 3
+  },
+  "01628.jpg": {
+   "gt": 1,
+   "pred": 60,
+   "hits": 1
+  },
+  "01629.jpg": {
+   "gt": 4,
+   "pred": 55,
+   "hits": 4
+  },
+  "01630.jpg": {
+   "gt": 3,
+   "pred": 49,
+   "hits": 3
+  },
+  "01631.jpg": {
+   "gt": 3,
+   "pred": 54,
+   "hits": 3
+  },
+  "01632.jpg": {
+   "gt": 2,
+   "pred": 54,
+   "hits": 2
+  },
+  "01633.jpg": {
+   "gt": 3,
+   "pred": 54,
+   "hits": 3
+  },
+  "01634.jpg": {
+   "gt": 2,
+   "pred": 48,
+   "hits": 2
+  },
+  "01635.jpg": {
+   "gt": 1,
+   "pred": 61,
+   "hits": 1
+  },
+  "01636.jpg": {
+   "gt": 4,
+   "pred": 48,
+   "hits": 4
+  },
+  "01637.jpg": {
+   "gt": 3,
+   "pred": 50,
+   "hits": 3
+  },
+  "01639.jpg": {
+   "gt": 1,
+   "pred": 57,
+   "hits": 1
+  },
+  "01640.jpg": {
+   "gt": 2,
+   "pred": 53,
+   "hits": 2
+  },
+  "01641.jpg": {
+   "gt": 3,
+   "pred": 52,
+   "hits": 3
+  },
+  "01642.jpg": {
+   "gt": 2,
+   "pred": 47,
+   "hits": 2
+  },
+  "01643.jpg": {
+   "gt": 1,
+   "pred": 51,
+   "hits": 1
+  },
+  "01644.jpg": {
+   "gt": 1,
+   "pred": 54,
+   "hits": 1
+  },
+  "01646.jpg": {
+   "gt": 2,
+   "pred": 46,
+   "hits": 2
+  },
+  "01647.jpg": {
+   "gt": 1,
+   "pred": 44,
+   "hits": 1
+  },
+  "01648.jpg": {
+   "gt": 4,
+   "pred": 55,
+   "hits": 4
+  },
+  "01649.jpg": {
+   "gt": 5,
+   "pred": 52,
+   "hits": 5
+  },
+  "01650.jpg": {
+   "gt": 2,
+   "pred": 49,
+   "hits": 2
+  },
+  "01651.jpg": {
+   "gt": 1,
+   "pred": 81,
+   "hits": 1
+  },
+  "01652.jpg": {
+   "gt": 2,
+   "pred": 52,
+   "hits": 2
+  },
+  "01653.jpg": {
+   "gt": 2,
+   "pred": 51,
+   "hits": 2
+  },
+  "01654.jpg": {
+   "gt": 2,
+   "pred": 61,
+   "hits": 2
+  },
+  "01656.jpg": {
+   "gt": 1,
+   "pred": 49,
+   "hits": 1
+  },
+  "01657.jpg": {
+   "gt": 3,
+   "pred": 56,
+   "hits": 3
+  },
+  "01658.jpg": {
+   "gt": 3,
+   "pred": 56,
+   "hits": 3
+  },
+  "01659.jpg": {
+   "gt": 2,
+   "pred": 54,
+   "hits": 2
+  },
+  "01660.jpg": {
+   "gt": 5,
+   "pred": 54,
+   "hits": 5
+  },
+  "01661.jpg": {
+   "gt": 4,
+   "pred": 46,
+   "hits": 4
+  },
+  "01662.jpg": {
+   "gt": 2,
+   "pred": 48,
+   "hits": 2
+  },
+  "01663.jpg": {
+   "gt": 3,
+   "pred": 55,
+   "hits": 3
+  },
+  "01664.jpg": {
+   "gt": 3,
+   "pred": 47,
+   "hits": 3
+  },
+  "01665.jpg": {
+   "gt": 3,
+   "pred": 46,
+   "hits": 3
+  },
+  "01666.jpg": {
+   "gt": 5,
+   "pred": 60,
+   "hits": 5
+  }
+ }
+}
