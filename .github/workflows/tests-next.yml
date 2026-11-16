@@ -1,0 +1,36 @@
+name: tests-next
+# Informational early-compatibility signal (issues #34, #36, #44):
+# weekly instead of per-PR, since kraken has no py3.14/py3.15 release yet
+# and these legs fail at install. Never blocks.
+on:
+  schedule:
+    - cron: "17 3 * * 1"
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  pytest-next:
+    name: pytest (${{ matrix.python-version }}, informational)
+    runs-on: ubuntu-24.04
+    continue-on-error: true
+    strategy:
+      matrix:
+        python-version: ["3.14", "3.15"]
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0 # v7
+        with:
+          cache: pip
+          python-version: ${{ matrix.python-version }}
+          allow-prereleases: true
+      - name: Install hash-locked dependencies
+        # Locks under requirements/ (#63, docs/DEPENDENCY-LOCKS.md). CPU-only
+        # torch and torchvision come from the PyTorch CPU index (full CUDA
+        # torch exhausts the runner disk, #47 follow-up), as in the Dockerfile.
+        run: |
+          pip install --require-hashes -r requirements/build.txt
+          pip install --require-hashes --extra-index-url https://download.pytorch.org/whl/cpu -r requirements/dev.txt
+          pip install --no-deps --no-build-isolation -e ./
+      - run: python -m pytest tests/ -q

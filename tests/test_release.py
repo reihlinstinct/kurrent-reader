@@ -1,0 +1,109 @@
+"""Tests for the automated release script (scripts/release.py)."""
+import re
+import sys
+from datetime import date
+from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "scripts"))
+import release  # noqa: E402
+
+D = date(2026, 10, 22)
+
+
+class TestParseCommits:
+    def test_conventional(self):
+        cs = release.parse_commits(["feat: add ruled-table reader", "fix(cli): crash"])
+        assert cs[0] == {"type": "feat", "breaking": False, "desc": "add ruled-table reader"}
+        assert cs[1]["type"] == "fix" and cs[1]["desc"] == "crash"
+
+    def test_breaking_bang(self):
+        cs = release.parse_commits(["feat!: drop py3.9"])
+        assert cs[0]["breaking"] is True
+
+    def test_non_conventional_passthrough(self):
+        cs = release.parse_commits(["wip misc stuff"])
+        assert cs[0]["type"] == "other"
+
+
+class TestBump:
+    def test_fix_is_patch(self):
+        assert release.bump(release.parse_commits(["fix: typo", "docs: readme"])) == "patch"
+
+    def test_feat_is_minor(self):
+        assert release.bump(release.parse_commits(["feat: x", "fix: y"])) == "minor"
+
+    def test_breaking_is_major(self):
+        assert release.bump(release.parse_commits(["fix!: api change", "feat: z"])) == "major"
+
+    def test_chore_only_no_release(self):
+        assert release.bump(release.parse_commits(["chore: lint", "ci: cache", "docs: x"])) is None
+
+    def test_empty_no_release(self):
+        assert release.bump([]) is None
+
+
+class TestNextVersion:
+    def test_patch(self):
+        assert release.next_version("0.1.0", "patch") == "0.1.1"
+
+    def test_minor(self):
+        assert release.next_version("0.1.0", "minor") == "0.2.0"
+
+    def test_major(self):
+        assert release.next_version("0.1.0", "major") == "1.0.0"
+
+
+class TestRender:
+    COMMITS = release.parse_commits(["feat: weekly training pipeline", "fix: stdout guard"])
+
+    def test_changelog_entry(self):
+        e = release.render_changelog_entry("0.2.0", "minor", self.COMMITS, D)
+        assert e.startswith("## [0.2.0] - 2026-10-22")
+        assert "### Features" in e
+        assert "- weekly training pipeline" in e and "- stdout guard" in e
+
+    def test_notes_bilingual(self):
+        n = release.render_release_notes("0.2.0", "minor", self.COMMITS, D)
+        assert "### Features" in n and "### תכונות חדשות" in n
+        assert "v0.2.0" in n
+
+    def test_notes_breaking_marked(self):
+        cs = release.parse_commits(["feat!: new config format"])
+        n = release.render_release_notes("1.0.0", "major", cs, D)
+        assert "**breaking**" in n and "שינויים שוברי תאימות" in n
+
+    def test_notes_no_personal_data_placeholder(self):
+        # policy guard: notes are built from commit subjects only
+        n = release.render_release_notes("0.1.1", "patch", self.COMMITS, D)
+        assert "@" not in n.split("###")[1]
+
+
+class TestReleaseSubjectRe:
+    def test_matches_release_commit(self):
+        m = release.RELEASE_SUBJECT_RE.match("chore(release): v0.2.0")
+        assert m and m.group(1) == "0.2.0"
+
+    def test_rejects_lookalikes(self):
+        assert release.RELEASE_SUBJECT_RE.match("chore(release): v0.2.0-rc1") is None
+        assert release.RELEASE_SUBJECT_RE.match("chore: release v0.2.0") is None
+        assert release.RELEASE_SUBJECT_RE.match("feat: chore(release): v1.0.0") is None
+
+
+class TestVersionSync:
+    def test_version_carriers_agree(self):
+        root = Path(__file__).resolve().parents[1]
+        v = (root / "VERSION").read_text().strip()
+        pp = re.search(r'(?m)^version = "([^"]+)"', (root / "pyproject.toml").read_text())
+        init = re.search(r'(?m)^__version__ = "([^"]+)"', (root / "src" / "kurrent_reader" / "__init__.py").read_text())
+        assert pp and pp.group(1) == v
+        assert init and init.group(1) == v
+
+    def test_sync_version_files(self, tmp_path):
+        (tmp_path / "pyproject.toml").write_text('[project]\nname = "x"\nversion = "0.1.0"\n')
+        pkg = tmp_path / "src" / "kurrent_reader"
+        pkg.mkdir(parents=True)
+        (pkg / "__init__.py").write_text('__version__ = "0.1.0"\n')
+        touched = release.sync_version_files("0.3.0", root=tmp_path)
+        assert 'version = "0.3.0"' in (tmp_path / "pyproject.toml").read_text()
+        assert '__version__ = "0.3.0"' in (pkg / "__init__.py").read_text()
+        assert len(touched) == 2
